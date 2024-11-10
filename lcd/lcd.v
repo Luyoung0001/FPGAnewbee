@@ -27,7 +27,6 @@ module lcd(
                    .clk            (clk           ),
                    .resetn         (resetn        ),
 
-
                    .display_valid  (display_valid ),
                    .display_name   (display_name  ),
                    .display_value  (display_value ),
@@ -52,6 +51,5 @@ module lcd(
         display_valid <= 1'b1;
         display_name  <= "Data";
         display_value <= 32'd20241106;
-        display_number <= 6'd6;
     end
 endmodule

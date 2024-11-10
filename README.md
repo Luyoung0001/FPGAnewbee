@@ -263,7 +263,7 @@ assign vsync = vsync_r;
 我们应该指出，当扫描到：
 
 ```Verilog
-wire display_active = (x_cnt >= 10'd180 && x_cnt < 10'd692) && (y_cnt >= 10'd190 && y_cnt <= 10'd323);
+wire display_active = (x_cnt >= 10'd180 && x_cnt < 10'd692) && (y_cnt >= 10'd190 && y_cnt <= 10'd445);
 ```
 
 这个范围的时候，表明有效，其它区域，直接显示黑色。这个范围就是我们的 LOGO 图像大小。
